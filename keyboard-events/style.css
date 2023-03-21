@@ -1,0 +1,55 @@
+body {
+	margin: 20px;
+	background-color: hsl(205, 14%, 28%);
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+		sans-serif;
+	color: white;
+}
+
+.stat-panels {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/* font-family: monospace; */
+}
+
+.stat-panel {
+	display: flex;
+	flex-direction: column;
+	min-width: 300px;
+	margin: 15px;
+}
+
+.stat-panel * {
+	padding: 5px;
+	border: 1px solid white;
+	font-size: 18px;
+}
+
+.stat-panel div {
+	font-size: 24px;
+}
+
+.stat-panel div p {
+	border: none;
+	font-size: 24px;
+}
+
+@keyframes event-fired-animation {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: white;
+	}
+}
+
+/* The element to apply the animation to */
+.event-fired {
+	color: black;
+	animation-name: event-fired-animation;
+	animation-duration: 0.1s;
+}
